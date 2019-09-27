@@ -1,0 +1,17 @@
+var randomColor; // declare random color;
+
+function setup() {
+  createCanvas(400, 400);
+  frameRate(10);
+}
+
+function draw() {
+  background(220, 40);
+  
+   randomColor = color(random(255),random(255),random(255));
+  
+  strokeWeight(random(1, 10));
+  stroke(randomColor);
+  line(random(width), random(height), random(width), random(height));
+  
+}
